@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: client     #provider-dev.yml
+  profiles:
+    active: dev        #配合applica.name去找配置文件
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true #是否启动快速失败功能，功能开启则优先判断config server是否正常

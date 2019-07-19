@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: provider2     #这个名字用处很多，比如服务中心的集群名字相同会才可视为高可用，还有文件provider-dev.yml等
+  profiles:
+    active: dev        #配合applica.name去找配置文件
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true #是否启动快速失败功能，功能开启则优先判断config server是否正常

@@ -1,0 +1,16 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: hystrix9002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
+  instance:
+    prefer-ip-address: true     #访问路径可以显示ip
+    instance-id: hystrix9002         #注册中心显示的名字
+feign:
+  hystrix:
+    enabled: true

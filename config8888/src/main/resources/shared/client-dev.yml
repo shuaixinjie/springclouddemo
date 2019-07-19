@@ -1,0 +1,13 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
+  instance:
+    prefer-ip-address: true     #访问路径可以显示ip
+    instance-id: client         #注册中心显示的名字

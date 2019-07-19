@@ -1,0 +1,15 @@
+首先这是一个springcloud的入门级使用指南
+它的详细说明来自 https://blog.csdn.net/qq_41750712/article/details/96351151
+
+eureka8761、eureka8761是两个服务注册中心，高可用
+
+provider8001、provider8002是两个一样服务提供者，注册到了eureka，高可用
+
+config8888是provider8001、provider8002、client的配置文件，也就打个样，其实应该写下所有的
+
+client（端口号是8011）是feign的使用样例
+
+hystrix9001是熔断样例
+
+hystrix9002是降级样例（client的基础上的改良）
+
